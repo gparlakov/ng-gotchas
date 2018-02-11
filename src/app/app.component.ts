@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  showTime = true;
+  showFeed = false;
+
+  public toggleTimer() {
+    this.showTime = !this.showTime;
+  }
+
+  public toggleFeed() {
+    this.showFeed = !this.showFeed;
+  }
 }
