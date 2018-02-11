@@ -14,5 +14,4 @@ export class TimeWidgetComponent {
   constructor(timeService: TimeService) {
     this.time$ = timeService.time$().map(t => `${t.getHours()} ${t.getMinutes()} ${t.getSeconds()}`);
   }
-
 }

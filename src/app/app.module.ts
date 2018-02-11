@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ServicesModule } from './services/services.module';
 import { TimeWidgetComponent } from './time-widget/time-widget.component';
 import { FeedModule } from './feed/feed.module';
+import { TimeService } from './services/time.service';
 
 
 @NgModule({
@@ -15,10 +15,9 @@ import { FeedModule } from './feed/feed.module';
   ],
   imports: [
     BrowserModule,
-    ServicesModule,
     FeedModule
   ],
-  providers: [],
+  providers: [TimeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
